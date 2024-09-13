@@ -8,6 +8,7 @@ body {
 }
 
 .footer {
+  background-color: white;
   height: 100vh;
 }
 .footer .main {
@@ -70,6 +71,7 @@ body {
 }
 .footer .foot {
   height: 65vh;
+  background-color: white;
 }
 .footer .foot .foottop {
   display: flex;
@@ -173,7 +175,7 @@ body {
     font-size: 4vw;
   }
   .footer .foot {
-    height: 45vh;
+    height: 60vh;
   }
   .footer .foot .foottop {
     flex-direction: column;

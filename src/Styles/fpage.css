@@ -5,10 +5,10 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(240, 248, 250) !important;
 }
 
 .features-page {
+  background-color: rgb(244, 248, 249) !important;
   text-align: center;
   display: flex;
   justify-content: center;

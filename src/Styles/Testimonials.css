@@ -5,7 +5,6 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: white;
 }
 
 .section-testimonials {
@@ -14,6 +13,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 60vh;
+  background-color: white !important;
 }
 .section-testimonials .intp {
   padding-top: vh;
