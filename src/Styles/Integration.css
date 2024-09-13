@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(240, 248, 250);
+}
+
+.integration-page .section-integrations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #cfe2f7;
+  padding-bottom: 7vh;
+  height: 70vh;
+}
+.integration-page .section-integrations .intp {
+  padding-top: 5vh;
+  color: #257af9;
+  margin-bottom: 1vh;
+  font-size: 2.5vw;
+}
+.integration-page .section-integrations .hierarchy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.integration-page .section-integrations .hierarchy .vert {
+  height: 29px;
+  background-color: black;
+  width: 0.2vw;
+}
+.integration-page .section-integrations .hierarchy .line {
+  background-color: black;
+  width: 50vw;
+  height: 0.4vh;
+}
+.integration-page .section-integrations .hierarchy .three {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+}
+.integration-page .section-integrations .integration-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 6vw;
+}
+.integration-page .section-integrations .integration-cards .orange {
+  background-color: #fff9ec;
+  border: 2px solid #ffd28c;
+}
+.integration-page .section-integrations .integration-cards .green {
+  background-color: #f1faec;
+  border: 2px solid #b4e2ab;
+}
+.integration-page .section-integrations .integration-cards .bluee {
+  background-color: #f4f6fe;
+  border: 2px solid #c4d3f2;
+}
+.integration-page .section-integrations .integration-cards .integration-card {
+  padding: 3vh 2vw;
+  border-radius: 8px;
+  width: 26%;
+  margin: 0vw 1vw;
+  text-align: left;
+}
+.integration-page .section-integrations .integration-cards .integration-card .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.integration-page .section-integrations .integration-cards .integration-card .top img {
+  width: 12%;
+  margin-bottom: 1.5vw;
+}
+.integration-page .section-integrations .integration-cards .integration-card .top h3 {
+  margin-left: 1.2vw;
+  font-size: 1.5vw;
+  color: #333;
+}
+.integration-page .section-integrations .integration-cards .integration-card p {
+  font-size: 1.1vw;
+  color: #666;
+}
+.integration-page .section-integrations .integration-cards .integration-card .first {
+  margin-top: 1vh;
+  height: 7vh;
+}
+.integration-page .section-integrations .integration-cards .integration-card .second {
+  margin-top: 4vh;
+}
+
+@media (max-width: 768px) {
+  .integration-page .section-integrations {
+    height: 95vh;
+  }
+  .integration-page .section-integrations .intp {
+    padding-top: 10vh !important;
+    font-size: 5vw !important;
+  }
+  .integration-page .section-integrations .hierarchy {
+    display: none;
+  }
+  .integration-page .section-integrations .integration-cards {
+    flex-direction: column;
+  }
+  .integration-page .section-integrations .integration-cards .integration-card {
+    width: 90vw !important;
+    margin-bottom: 1.5vh;
+  }
+  .integration-page .section-integrations .integration-cards .integration-card .top h3 {
+    margin-left: 5vw !important;
+    font-size: 4vw !important;
+  }
+  .integration-page .section-integrations .integration-cards .integration-card .first {
+    margin-top: 1vh;
+    font-size: 4vw !important;
+  }
+  .integration-page .section-integrations .integration-cards .integration-card .second {
+    font-size: 4vw !important;
+  }
+}/*# sourceMappingURL=Integration.css.map */

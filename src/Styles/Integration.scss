@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240 248 250);
+}
+
+@mixin flexprop ($jcont) {
+    display: flex;
+    justify-content: $jcont;
+    align-items: center;
+}
+
+.integration-page {
+    .section-integrations {
+        @include flexprop(center);
+        flex-direction: column;
+        background-color: #cfe2f7;
+        padding-bottom: 7vh;
+        height: 70vh;
+
+        .intp{
+            padding-top: 5vh;
+            color: #257af9;
+            margin-bottom: 1vh;
+            font-size: 2.5vw;
+        }
+
+        .hierarchy{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .vert{
+                // font-size: 40px;
+                height: 29px;
+                background-color: black;
+                width: 0.2vw;
+            }
+            .line{
+                background-color: black;
+                width: 50vw;
+                height: 0.4vh;
+                // margin-bottom: 0.5vh;
+            }
+            .three{
+                width: 50vw;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .integration-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0 6vw;
+
+            .orange {
+                background-color: #fff9ec;
+                border: 2px solid #ffd28c;
+            }
+
+            .green {
+                background-color: #f1faec;
+                border: 2px solid #b4e2ab;
+            }
+
+            .bluee {
+                background-color: #f4f6fe;
+                border: 2px solid #c4d3f2;
+            }
+
+            .integration-card {
+                padding: 3vh 2vw;
+                border-radius: 8px;
+                width: 26%;
+                margin: 0vw 1vw;
+                text-align: left;
+
+                .top{
+                    @include flexprop(center);
+                    justify-content: flex-start;
+                    // text-align: center;
+
+                    img {
+                        width: 12%;
+                        margin-bottom: 1.5vw;
+                    }
+
+                    h3 {
+                        margin-left: 1.2vw;
+                        font-size: 1.5vw;
+                        color: #333;
+                    }
+                }
+
+                p {
+                    font-size: 1.1vw;
+                    color: #666;
+                }
+
+                .first{
+                    margin-top: 1vh;
+                    height: 7vh;
+                }
+                .second{
+                    margin-top: 4vh;
+                }
+            }
+        }
+    }
+}
+
+// Mobile Styles
+@media (max-width: 768px) {
+    .integration-page{
+        .section-integrations{
+            height: 95vh;
+
+            .intp{
+                padding-top: 10vh !important;
+                font-size: 5vw !important;
+            }
+            .hierarchy{
+                display: none;
+            }
+            .integration-cards{
+                flex-direction: column;
+        
+                .integration-card{
+                    width: 90vw !important;
+                    margin-bottom: 1.5vh;
+                    .top{
+                        h3{
+                            margin-left: 5vw !important;
+                            font-size: 4vw !important;
+                        }
+                    }
+                    .first{
+                        margin-top: 1vh;
+                        font-size: 4vw !important;
+                    }
+                    .second{
+                        font-size: 4vw !important;
+                    }
+                }
+            }
+        }
+    }
+}
