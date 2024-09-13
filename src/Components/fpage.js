@@ -13,9 +13,19 @@ import img8 from "../featureicons/8.png";
 import img9 from "../featureicons/9.png";
 
 function fpage() {
+  const logos = Array(6).fill(null);
   return (
-    <div>
-      
+    <div className="features-page">
+      <div className="logocont">
+        <div className="contt">
+          <p>USED BY OVER 50 ENTERPRISES</p>
+        </div>
+        <div className="logos">
+          {logos.map((_, index) => (
+            <img key={index} src={logo} alt="Logo" />
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

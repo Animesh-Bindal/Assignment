@@ -7,3 +7,50 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(240 248 250) !important;
 }
+
+@mixin flexprop ($jcont) {
+    display: flex;
+    justify-content: $jcont;
+    align-items: center;
+}
+
+.features-page {
+    // padding: 2rem;
+    text-align: center;
+    @include flexprop(center);
+    flex-direction: column;
+    padding-bottom: 4vh;
+
+    .logocont {
+        border-radius: 7px;
+        border-color: #ccc;
+        background-color: white;
+        // background-color: rgb(240 248 250);
+        padding: 4vh 2vw 2vh 2vw;
+
+        .contt {
+
+            // margin-bottom: none;
+            p {
+                color: #ccc;
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-size: 1.3vw;
+            }
+        }
+
+        .logos {
+            @include flexprop(center);
+            white-space: nowrap;
+            width: 70vw;
+            height: 12vh;
+
+            img {
+                // margin: 0 0.5rem;
+                height: 3.83vh;
+                width: auto; 
+                margin: 0 auto;
+            }
+        }
+    }
+}
