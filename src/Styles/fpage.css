@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(240, 248, 250) !important;
+}
+
+.features-page {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 4vh;
+}
+.features-page .logocont {
+  border-radius: 7px;
+  border-color: #ccc;
+  background-color: white;
+  padding: 4vh 2vw 2vh 2vw;
+}
+.features-page .logocont .contt p {
+  color: #ccc;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.3vw;
+}
+.features-page .logocont .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  width: 70vw;
+  height: 12vh;
+}
+.features-page .logocont .logos img {
+  height: 3.83vh;
+  width: auto;
+  margin: 0 auto;
+}
+.features-page .featuress {
+  margin-top: 5vh;
+  background-color: rgb(240, 248, 250);
+}
+.features-page .featuress h2 {
+  margin-top: 2vh;
+  color: #007bff;
+  margin-bottom: 5vh;
+}
+.features-page .featuress .features-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.features-page .featuress .features-list .feature-card {
+  background-color: transparent;
+  border: none;
+  padding: 1vw;
+  width: 22vw;
+  height: 15vh;
+  margin: 1vh;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.features-page .featuress .features-list .feature-card .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.features-page .featuress .features-list .feature-card .top img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1vw;
+}
+.features-page .featuress .features-list .feature-card .top h3 {
+  font-size: 1vw;
+  color: #333;
+}
+.features-page .featuress .features-list .feature-card .top .ftitle {
+  width: 15vw;
+}
+.features-page .featuress .features-list .feature-card .top .coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7vw;
+  color: #ff9800;
+  background-color: rgb(255, 230, 183);
+  font-weight: bold;
+  margin-left: 0.3vw;
+  font-weight: bold;
+  right: 0;
+  height: 3vh;
+  width: 6vw;
+  margin-right: 0;
+}
+.features-page .featuress .features-list .feature-card p {
+  margin-top: 2vh;
+  font-size: 1.1vw;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .featuress {
+    margin-top: 5vh !important;
+  }
+  .featuress .features-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw !important;
+    height: auto;
+  }
+  .featuress .features-list .feature-card {
+    width: 100% !important;
+    height: auto;
+  }
+  .featuress .features-list .feature-card .top h3 {
+    font-size: 5vw !important;
+  }
+  .featuress .features-list .feature-card .top .ftitle {
+    width: 62vw !important;
+  }
+  .featuress .features-list .feature-card .top .coming-soon {
+    width: 23vw !important;
+    font-size: 3vw !important;
+  }
+  .featuress .features-list .feature-card p {
+    font-size: 4vw !important;
+  }
+  .logocont {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logocont .contt p {
+    font-size: 4vw !important;
+  }
+  .logocont .logos {
+    width: 100% !important;
+    flex-wrap: wrap;
+  }
+  .logocont .logos img {
+    width: 10vw !important;
+  }
+}/*# sourceMappingURL=fpage.css.map */

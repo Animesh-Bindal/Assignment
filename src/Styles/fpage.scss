@@ -29,7 +29,6 @@ body {
         padding: 4vh 2vw 2vh 2vw;
 
         .contt {
-
             // margin-bottom: none;
             p {
                 color: #ccc;
@@ -48,8 +47,138 @@ body {
             img {
                 // margin: 0 0.5rem;
                 height: 3.83vh;
-                width: auto; 
+                width: auto;
                 margin: 0 auto;
+            }
+        }
+    }
+
+    .featuress {
+        margin-top: 5vh;
+        background-color: rgb(240 248 250);
+
+        h2 {
+            margin-top: 2vh;
+            color: #007bff;
+            margin-bottom: 5vh;
+        }
+
+        .features-list {
+            @include flexprop(center);
+            width: 80vw;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .feature-card {
+                background-color: transparent;
+                border: none;
+                padding: 1vw;
+                width: 22vw;
+                height: 15vh;
+                margin: 1vh;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+
+                .top {
+                    @include flexprop(center);
+                    justify-content: flex-start;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 1vw;
+                    }
+
+                    h3 {
+                        font-size: 1vw;
+                        color: #333;
+                    }
+
+                    .ftitle {
+                        width: 15vw;
+                    }
+
+                    .coming-soon {
+                        @include flexprop(center);
+                        font-size: 0.7vw;
+                        color: #ff9800;
+                        background-color: rgb(255, 230, 183);
+                        font-weight: bold;
+                        margin-left: 0.3vw;
+                        font-weight: bold;
+                        right: 0;
+                        height: 3vh;
+                        width: 6vw;
+                        margin-right: 0;
+                    }
+                }
+
+                p {
+                    margin-top: 2vh;
+                    font-size: 1.1vw;
+                    color: #666;
+                }
+
+            }
+        }
+    }
+}
+
+// Mobile Styles
+@media (max-width: 768px) {
+    .featuress {
+        margin-top: 5vh !important;
+
+        .features-list {
+            @include flexprop(center);
+            flex-direction: column;
+            width: 100vw !important;
+            height: auto;
+
+            .feature-card {
+                width: 100% !important;
+                height: auto;
+
+                .top {
+                    h3 {
+                        font-size: 5vw !important;
+                    }
+
+                    .ftitle {
+                        width: 62vw !important;
+                    }
+
+                    .coming-soon {
+                        width: 23vw !important;
+                        font-size: 3vw !important;
+                    }
+                }
+
+                p {
+                    font-size: 4vw !important;
+                }
+            }
+        }
+    }
+
+    .logocont {
+        width: 100% !important;
+        @include flexprop(center);
+        flex-direction: column;
+
+        .contt {
+            p {
+                font-size: 4vw !important;
+            }
+        }
+
+        .logos {
+            width: 100% !important;
+            flex-wrap: wrap;
+
+            img {
+                width: 10vw !important;
             }
         }
     }
