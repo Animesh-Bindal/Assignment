@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  height: 100vh;
+}
+.footer .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3vh 0 3vh 0;
+  background-color: rgb(240, 248, 250);
+  height: 28vh;
+}
+.footer .main .topcont .top {
+  color: #1e90ff;
+  font-size: 2.8vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 3vh;
+}
+.footer .main .formdetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5vw;
+}
+.footer .main .formdetails .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .main .formdetails .form input {
+  color: #908d8d;
+  background: white;
+  border: 1px solid #908d8d;
+  border-radius: 6px;
+  margin-right: 0.5vw;
+  padding: 1.5vh 1vw;
+  font-size: 1vw;
+}
+.footer .main .formdetails .form .name {
+  width: 10vw;
+}
+.footer .main .formdetails .form .email {
+  width: 22vw;
+}
+.footer .main .formdetails .form button {
+  background: linear-gradient(#1e90ff, rgba(0, 0, 255, 0.6));
+  color: white;
+  border-radius: 6px;
+  padding: 1.5vh 1.5vw;
+  text-decoration: none;
+  border: none;
+  font-size: 1vw;
+}
+.footer .main .formdetails .trial-details {
+  margin-top: 3.5vh;
+  font-size: 1.3vw;
+  color: #908d8d;
+}
+.footer .foot {
+  height: 65vh;
+}
+.footer .foot .foottop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10vh 10vw 0 10vw;
+  border-bottom: 1px solid #ddd;
+}
+.footer .foot .foottop .lgo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 30vh;
+  width: 50%;
+}
+.footer .foot .foottop .lgo .logo {
+  width: 15vw;
+}
+.footer .foot .foottop .rightt {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 2vw;
+  color: #908d8d;
+}
+.footer .foot .foottop .rightt .addr, .footer .foot .foottop .rightt .ph, .footer .foot .foottop .rightt .bottomm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .foot .foottop .rightt .addr p, .footer .foot .foottop .rightt .ph p, .footer .foot .foottop .rightt .bottomm p {
+  margin-left: 0.5vw;
+}
+.footer .foot .foottop .rightt img {
+  width: 2.5vw;
+  height: 2.5vw;
+  margin: 0.5vw;
+}
+.footer .foot .footbot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24vh;
+  font-size: 1.3vw;
+  padding: 0 5vw;
+}
+.footer .foot .footbot .footnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1vw;
+}
+.footer .foot .footbot .footnav a {
+  color: #908d8d;
+  text-decoration: none;
+  padding: 1.09vh 1.6vw;
+}
+.footer .foot .footbot .copyr p {
+  color: #908d8d;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 100% !important;
+    height: 75vh;
+  }
+  .footer .main {
+    width: 100% !important;
+  }
+  .footer .main .topcont .top {
+    font-size: 4.5vw !important;
+  }
+  .footer .main .formdetails .form {
+    flex-direction: column;
+  }
+  .footer .main .formdetails .form input {
+    font-size: 4vw;
+  }
+  .footer .main .formdetails .form .name {
+    width: 70vw;
+    margin-bottom: 1vh;
+    height: 1vh;
+  }
+  .footer .main .formdetails .form .email {
+    width: 70vw;
+    margin-bottom: 1vh;
+    height: 1vh;
+  }
+  .footer .main .formdetails .form button {
+    font-size: 4vw;
+    padding: 1.5vh 5vw;
+    width: 73vw;
+  }
+  .footer .main .formdetails .trial-details {
+    font-size: 4vw;
+  }
+  .footer .foot {
+    height: 45vh;
+  }
+  .footer .foot .foottop {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5vh 10vw 0 10vw;
+  }
+  .footer .foot .foottop .lgo {
+    height: 8vh;
+  }
+  .footer .foot .foottop .lgo .logo {
+    width: 50vw;
+  }
+  .footer .foot .foottop .rightt {
+    height: 15vh;
+    font-size: 4vw;
+  }
+  .footer .foot .footbot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4vw;
+    padding: 0 1vw !important;
+    height: 10vh;
+  }
+  .footer .foot .footbot .copyr {
+    margin-top: 1vh;
+  }
+}/*# sourceMappingURL=footer.css.map */
