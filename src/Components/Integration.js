@@ -26,7 +26,6 @@ function Integration() {
     }
   ];
   return (
-    <div>
       <div className="integration-page">
         <div className="section-integrations">
           <p className='intp'>Integrations</p>
@@ -53,7 +52,6 @@ function Integration() {
           </div>
         </div>
       </div>
-    </div>
   )
 }
 
